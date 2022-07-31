@@ -39,13 +39,16 @@ function checkVertical(row, column) {
     } else break;
   }
   if (counter === 4) {
+    console.log(counter);
     return true;
   } else return false;
 }
 
 function checkHorizontal(row, column) {
+  console.log("check H");
   let counter = 1;
-  let maxColumn = Number(column) + 3;
+  column = Number(column);
+  let maxColumn = column + 3;
   let minColumn = column - 3;
   for (let i = column; i < maxColumn; i++) {
     if (board[row][i + 1] === currentPiece) {
