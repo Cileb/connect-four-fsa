@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e1d9d1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px black;
+  border-radius: 20px;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+h1 {
+  border-radius: 16px;
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+  color: white;
+  background-color: darkblue;
+}
+
+#board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+#red {
+  background-color: red;
+  border: 3px solid black;
+}
+
+#yellow {
+  background-color: yellow;
+  border: 3px solid black;
+}
+
+.game-hole {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 0;
+  border: 2px solid black;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+.input-container {
+  background-color: darkblue;
+  color: white;
+  border-radius: 16px;
+}
+
+#player-input,
+#status-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 700px;
+}
+#player-input {
+  padding-bottom: 2rem;
+}
+#player-input2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+input {
+  margin: 0 2rem;
+}
+p {
+  text-align: center;
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin: 0 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 75px;
+  min-width: 75px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  opacity: 0.5;
+  display: none;
+}
+
+button:hover:enabled {
+  transition: all 0.25s;
+  background: black;
+  color: white;
+  transform: scale(1.15);
+  animation: 0.8s linear infinite;
+}
